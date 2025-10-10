@@ -7,6 +7,8 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- main stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,17 +17,21 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="brand">Vedansh<span>Academy</span></div>
-      <nav>
+
+      <!-- nav links (will wrap on mobile) -->
+      <nav class="nav-links">
         <a href="#courses">Courses</a>
         <a href="#why">Why Us</a>
-        <a href="#contact" class="btn-nav">Join Now</a>
       </nav>
+
+      <!-- join button -->
+      <a href="#contact" class="btn-nav">Join Now</a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-inner">
+    <div class="hero-inner container">
       <div class="hero-text">
         <h1>Launch your <span>Medical Coding Career</span> with confidence.</h1>
         <p>Structured online programs designed by industry experts. Practice-based learning that gets you job-ready.</p>
@@ -34,65 +40,89 @@
           <a href="#courses" class="btn-outline">Explore Courses</a>
         </div>
       </div>
+
       <div class="hero-image">
-        <img src="public/banner.png" alt="Hero illustration" width="200px" height="300px"/>
+        <!-- reduced banner size for lighter look -->
+        <img class="banner" src="public/banner.png" alt="Main banner">
       </div>
     </div>
   </section>
 
   <!-- Why Us -->
-  <section id="why" class="why">
+  <section id="why" class="why container">
     <h2>Why Students Choose Vedansh</h2>
     <div class="why-grid">
       <div class="why-card">
         <img src="https://cdn-icons-png.flaticon.com/512/3068/3068846.png" alt="">
         <h3>Expert Trainers</h3>
-        <p>Learn from certified professionals with 5+ years of field experience.</p>
+        <p>Learn from certified professionals with years of real-world experience.</p>
       </div>
       <div class="why-card">
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
         <h3>Practical Curriculum</h3>
-        <p>Real-world coding cases, not just theory — learn by doing.</p>
+        <p>Hands-on coding cases so you can apply skills immediately.</p>
       </div>
       <div class="why-card">
         <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="">
         <h3>Placement Support</h3>
-        <p>Interview prep, resume help, and direct job connections.</p>
+        <p>Interview prep, resume help and placement assistance.</p>
       </div>
     </div>
   </section>
 
   <!-- Courses -->
   <section id="courses" class="courses">
-    <h2>Courses</h2>
-    <div class="course-grid">
-      <div class="course-card">
-        <h3>Medical Coding Basics</h3>
-        <p>6 weeks • Online</p>
-      </div>
-      <div class="course-card">
-        <h3>Advanced Coding + Auditing</h3>
-        <p>8 weeks • Interactive</p>
-      </div>
-      <div class="course-card">
-        <h3>CPC Exam Prep</h3>
-        <p>4 weeks • Mock Tests</p>
-      </div>
-      <div class="course-card">
-        <h3>Medical Billing</h3>
-        <p>5 weeks • Practice cases</p>
+    <div class="container">
+      <h2>Courses & Programs</h2>
+
+      <div class="course-list">
+        <div class="course-item">
+          <h3>Speciality Training</h3>
+          <p class="small"><strong>Topics:</strong></p>
+          <ul>
+            <li>IPD/ERG (Inpatient Diagnosis / Procedure coding)</li>
+            <li>E/M (Evaluation & Management) — IP and OP</li>
+            <li>ED (Emergency Department)</li>
+            <li>Radiology</li>
+            <li>Dentals</li>
+          </ul>
+          <p><strong>Duration:</strong> 1–2 months</p>
+        </div>
+
+        <div class="course-item">
+          <h3>Other Courses</h3>
+          <ul>
+            <li>CPC (Certified Professional Coder)</li>
+            <li>CCS (Certified Coding Specialist)</li>
+            <li>CRC (Clinical Research Coordinator)</li>
+          </ul>
+          <p><strong>Certification & Benefits:</strong> 100% pass guarantee program, Placement assistance</p>
+          <p><strong>Duration:</strong> 2 months</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- MID LOGO (centered between courses and contact) -->
+  <section class="mid-logo container" aria-hidden="false">
+    <!-- larger on desktop, scales down on mobile -->
+    <img src="public/logo.png" alt="Vedansh logo">
+  </section>
+
   <!-- Contact -->
   <section id="contact" class="contact">
-    <h2>Join Vedansh Academy</h2>
-    <div class="contact-box">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjY5MZKPFyccdyJWLc3aJkSbQPaXBQ6mHp8DPrdly_By8qUA/viewform?embedded=true" width="100%" height="500" frameborder="0">Loading…</iframe>
-    </div>
-    <div class="info">
-      <p>Email: <strong>vedansh@demo.com</strong> | Instagram: <strong>@vedansh_academy</strong></p>
+    <div class="container">
+      <h2>Join Vedansh Academy</h2>
+
+      <div class="contact-box">
+        <!-- keep Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjY5MZKPFyccdyJWLc3aJkSbQPaXBQ6mHp8DPrdly_By8qUA/viewform?embedded=true" width="100%" height="520" frameborder="0">Loading…</iframe>
+      </div>
+
+      <div class="info contact-info">
+        <p>Email: <strong>akularakesh9912@gmail.com</strong></strong></p>
+        <p>Contact: <strong>+91 91335 12523</strong> | Proprietor: <strong>Rakesh</strong></p>
+      </div>
     </div>
   </section>
 
