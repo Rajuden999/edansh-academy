@@ -15,17 +15,21 @@
 
   <!-- Navigation -->
   <header class="navbar">
-    <div class="nav-container">
-      <div class="brand">Vedansh<span>Academy</span></div>
+    <div class="nav-container container">
+      <div class="brand-with-logo">
+        <!-- round header logo placed beside the brand name -->
+        <img src="public/logo.png" alt="Vedansh logo" class="header-logo">
+        <div class="brand">Vedansh<span>Academy</span></div>
+      </div>
 
       <!-- nav links (will wrap on mobile) -->
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about-us">About Us</a>
         <a href="#courses">Courses</a>
         <a href="#why">Why Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#contact" class="btn-nav">Join Now</a>
       </nav>
-
-      <!-- join button -->
-      <a href="#contact" class="btn-nav">Join Now</a>
     </div>
   </header>
 
@@ -42,8 +46,113 @@
       </div>
 
       <div class="hero-image">
-        <!-- reduced banner size for lighter look -->
         <img class="banner" src="public/banner.png" alt="Main banner">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US (new: placed directly under hero) -->
+  <section id="about-us" class="about-us container">
+    <h2>About Vedansh Academy</h2>
+    <p>Vedansh Academy provides practical, job-focused medical coding training. We combine expert instruction, real case practice and placement support so students are ready for coding roles in hospitals and clinics.</p>
+    <p class="small">Short, hands-on courses — updated curriculum — placement help.</p>
+  </section>
+
+  <!-- Courses (unchanged structure) -->
+  <section id="courses" class="courses">
+    <div class="container">
+      <h2>Courses & Programs</h2>
+
+      <div class="course-list">
+
+        <!-- IPD / ERG (special training example) -->
+        <div class="course-item">
+          <img src="public/ipd_erg.jpg" alt="IPD / ERG" class="course-img">
+          <div class="course-body">
+            <h3>IPD / ERG (Inpatient Diagnosis & Procedure)</h3>
+            <p class="small">Focused inpatient coding training covering DRG, procedure coding and abstracting for hospital billing.</p>
+            <p><strong>Duration:</strong> 3–6 weeks</p>
+            <p><a href="#contact" class="btn-outline">Get IPD Syllabus</a></p>
+          </div>
+        </div>
+
+        <!-- E/M -->
+        <div class="course-item">
+          <img src="public/em.jpg" alt="Evaluation & Management (E/M)" class="course-img">
+          <div class="course-body">
+            <h3>E/M — Evaluation & Management (IP & OP)</h3>
+            <p class="small">Master E/M guidelines for inpatient and outpatient encounters: history, exam, MDM and accurate level selection.</p>
+            <p><strong>Duration:</strong> 3–6 weeks</p>
+            <p><a href="#contact" class="btn-outline">Get E/M Outline</a></p>
+          </div>
+        </div>
+
+        <!-- ED -->
+        <div class="course-item">
+          <img src="public/ed.jpg" alt="Emergency Department (ED) Coding" class="course-img">
+          <div class="course-body">
+            <h3>Emergency Department (ED)</h3>
+            <p class="small">Training for ED documentation and coding: time-based services, level selection, and common modifiers.</p>
+            <p><strong>Duration:</strong> 2–4 weeks</p>
+            <p><a href="#contact" class="btn-outline">Request ED Details</a></p>
+          </div>
+        </div>
+
+        <!-- Radiology -->
+        <div class="course-item">
+          <img src="public/radiology.jpg" alt="Radiology Coding" class="course-img">
+          <div class="course-body">
+            <h3>Radiology Coding</h3>
+            <p class="small">Covers CPT coding for imaging procedures, modifiers, and documentation requirements.</p>
+            <p><strong>Duration:</strong> 2–4 weeks</p>
+            <p><a href="#contact" class="btn-outline">Get Radiology Syllabus</a></p>
+          </div>
+        </div>
+
+        <!-- Dentals -->
+        <div class="course-item">
+          <img src="public/dentals.jpg" alt="Dentals" class="course-img">
+          <div class="course-body">
+            <h3>Dentals</h3>
+            <p class="small">Dental procedure coding fundamentals: CDT codes and common documentation needs.</p>
+            <p><strong>Duration:</strong> 2–3 weeks</p>
+            <p><a href="#contact" class="btn-outline">Request Dental Info</a></p>
+          </div>
+        </div>
+
+        <!-- CPC -->
+        <div class="course-item">
+          <img src="public/cpc.jpg" alt="CPC Certification" class="course-img">
+          <div class="course-body">
+            <h3>CPC — Certified Professional Coder</h3>
+            <p class="small">Outpatient-focused CPC training: CPT, ICD-10-CM, HCPCS and exam prep.</p>
+            <p><strong>Duration:</strong> 2 months</p>
+            <p><a href="#contact" class="btn-outline">Request CPC Info</a></p>
+          </div>
+        </div>
+
+        <!-- CCS -->
+        <div class="course-item">
+          <img src="public/ccs.jpg" alt="CCS Certification" class="course-img">
+          <div class="course-body">
+            <h3>CCS — Certified Coding Specialist</h3>
+            <p class="small">Advanced inpatient coding: ICD-10-CM/PCS, abstraction and complex case studies.</p>
+            <p><strong>Duration:</strong> 2–3 months</p>
+            <p><a href="#contact" class="btn-outline">Request CCS Outline</a></p>
+          </div>
+        </div>
+
+        <!-- CRC -->
+        <div class="course-item">
+          <img src="public/crc.jpg" alt="CRC — Clinical Research Coordinator" class="course-img">
+          <div class="course-body">
+            <h3>CRC — Clinical Research Coordinator</h3>
+            <p class="small">Study coordination basics: documentation, monitoring, informed consent and regulatory principles.</p>
+            <p><strong>Duration:</strong> 1–2 months</p>
+            <p><a href="#contact" class="btn-outline">Request CRC Details</a></p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -70,65 +179,55 @@
     </div>
   </section>
 
-  <!-- Courses -->
-  <section id="courses" class="courses">
-    <div class="container">
-      <h2>Courses & Programs</h2>
-
-      <div class="course-list">
-        <div class="course-item">
-          <h3>Speciality Training</h3>
-          <p class="small"><strong>Topics:</strong></p>
-          <ul>
-            <li>IPD/ERG (Inpatient Diagnosis / Procedure coding)</li>
-            <li>E/M (Evaluation & Management) — IP and OP</li>
-            <li>ED (Emergency Department)</li>
-            <li>Radiology</li>
-            <li>Dentals</li>
-          </ul>
-          <p><strong>Duration:</strong> 1–2 months</p>
-        </div>
-
-        <div class="course-item">
-          <h3>Other Courses</h3>
-          <ul>
-            <li>CPC (Certified Professional Coder)</li>
-            <li>CCS (Certified Coding Specialist)</li>
-            <li>CRC (Clinical Research Coordinator)</li>
-          </ul>
-          <p><strong>Certification & Benefits:</strong> 100% pass guarantee program, Placement assistance</p>
-          <p><strong>Duration:</strong> 2 months</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MID LOGO (centered between courses and contact) -->
-  <section class="mid-logo container" aria-hidden="false">
-    <!-- larger on desktop, scales down on mobile -->
-    <img src="public/logo.png" alt="Vedansh logo">
-  </section>
-
   <!-- Contact -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Join Vedansh Academy</h2>
 
       <div class="contact-box">
-        <!-- keep Google Form -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjY5MZKPFyccdyJWLc3aJkSbQPaXBQ6mHp8DPrdly_By8qUA/viewform?embedded=true" width="100%" height="520" frameborder="0">Loading…</iframe>
       </div>
 
-      <div class="info contact-info">
-        <p>Email: <strong>akularakesh9912@gmail.com</strong></strong></p>
-        <p>Contact: <strong>+91 91335 12523</strong> | Proprietor: <strong>Rakesh</strong></p>
+      </section>
+
+  <!-- Footer (dark as requested) -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-col footer-about">
+        <img src="public/logo.png" alt="Vedansh logo" class="footer-logo">
+        <p>Vedansh Academy — practical medical coding training with placement support. Hands-on labs, exam prep and industry mentors.</p>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Join Now</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Contact Info</h4>
+        <p><strong>Email:</strong> <a href="mailto:akularakesh9912@gmail.com">akularakesh9912@gmail.com</a></p>
+        <p><strong>Contact:</strong> +91 91335 12523</p>
+        <p><strong>Proprietor:</strong> Rakesh</p>
+        <p><strong>Address:</strong> 4th floor, Uppal Circle, Srinivasa Estate, Hyderabad, Telangana — 500039</p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/medical_codimg_jobs_placements?utm_source=qr&igsh=MXV4Z3B0b2tqYmZ3NQ==" target="_blank" rel="noopener">@medical_codimg_jobs_placements</a></p>
       </div>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2025 Vedansh Medical Coding Academy — All rights reserved.</p>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Vedansh Medical Coding Academy — All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+<script>
+  document.getElementById('year').innerText = new Date().getFullYear();
+</script>
 
 </body>
 </html>
